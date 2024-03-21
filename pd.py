@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv('dummy_user_data.csv')
 
 # Convert 'Date' column to datetime
-# df['Date'] = pd.to_datetime(df['Date'])
+df['Date'] = pd.to_datetime(df['Date'])
 
 # Basic insights
 print("Basic Statistical Summary:\n", df.describe())
