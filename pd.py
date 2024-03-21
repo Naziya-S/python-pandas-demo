@@ -24,3 +24,7 @@ print(f"\nUser with Most Page Visits: User_ID {most_active_user}")
 # Average error count
 average_errors = df['Error_Count'].mean()
 print(f"\nAverage Error Count per Session: {average_errors:.2f}")
+
+# Extra column - Average page visits per session
+average_page_visits_per_session = df['Avg_Page_Visits_Per_Session'].mean()
+print(f"\nAverage Page Visits per Session: {average_page_visits_per_session:.2f}")
