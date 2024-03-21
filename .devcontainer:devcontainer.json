@@ -3,7 +3,7 @@
   "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
   "extensions": [
     "ms-python.python",
-    "ms-vscode.vscode-csv"
+    "mechatroner.rainbow-csv"
   ],
   "postCreateCommand": "pip install pandas",
   "settings": {
