@@ -1,0 +1,7 @@
+{
+  "name": "Python Pandas Demo",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
+  "extensions": [
+    "ms-python.python"
+  ]
+}
