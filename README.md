@@ -17,6 +17,7 @@ This repository contains a Python script and a CSV file for demonstrating data a
 - [Data Analysis Tasks](#data-analysis-tasks)
 - [Contributing](#contributing)
 - [License](#license)
+- [Program Output Explained](#output)
 
 ## Getting Started
 
@@ -87,3 +88,56 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use and 
 ---
 
 If you have any questions or need further assistance, please don't hesitate to reach out. Happy analyzing!
+
+
+---
+
+## Output
+
+1. `Basic Statistical Summary:`
+   - This line is just a header indicating that the following output provides a basic statistical summary of the data.
+
+2. `Date User_ID Login_Duration Pages_Visited Error_Count`
+   - This line represents the column names of the DataFrame. It shows that the DataFrame has columns named 'Date', 'User_ID', 'Login_Duration', 'Pages_Visited', and 'Error_Count'.
+
+3. `count 100 100.000000 100.000000 100.000000 100.000000`
+   - The 'count' row shows the number of non-null values in each column.
+   - In this case, all columns have 100 non-null values, indicating that there are no missing values in the dataset.
+
+4. `mean 2023-02-19 12:00:00 1460.080000 33.397307 9.630000 1.930000`
+   - The 'mean' row shows the average value for each numerical column.
+   - For the 'Date' column, it shows the mean timestamp value.
+   - The 'User_ID' column is not included in the mean calculation since it is likely a categorical or non-numeric column.
+   - The average login duration is 1460.08 (unit depends on the original data), the average number of pages visited is 33.397307, and the average error count is 1.93.
+
+5. `min 2023-01-01 00:00:00 1009.000000 5.878905 1.000000 0.000000`
+   - The 'min' row shows the minimum value for each numerical column.
+   - The earliest date in the 'Date' column is 2023-01-01 00:00:00.
+   - The minimum login duration is 1009.0, the minimum number of pages visited is 5.878905, and the minimum error count is 0.
+
+6. `25% 2023-01-25 18:00:00 1186.750000 19.732347 5.750000 1.000000`
+   - The '25%' row represents the first quartile (25th percentile) value for each numerical column.
+   - 25% of the dates are earlier than or equal to 2023-01-25 18:00:00.
+   - 25% of the login durations are less than or equal to 1186.75, 25% of the pages visited are less than or equal to 19.732347, and 25% of the error counts are less than or equal to 1.
+
+7. `50% 2023-02-19 12:00:00 1448.500000 32.035095 9.000000 2.000000`
+   - The '50%' row represents the median (50th percentile) value for each numerical column.
+   - The median date is 2023-02-19 12:00:00.
+   - The median login duration is 1448.5, the median number of pages visited is 32.035095, and the median error count is 2.
+
+8. `75% 2023-03-16 06:00:00 1725.000000 46.827497 14.000000 3.000000`
+   - The '75%' row represents the third quartile (75th percentile) value for each numerical column.
+   - 75% of the dates are earlier than or equal to 2023-03-16 06:00:00.
+   - 75% of the login durations are less than or equal to 1725.0, 75% of the pages visited are less than or equal to 46.827497, and 75% of the error counts are less than or equal to 3.
+
+9. `max 2023-04-10 00:00:00 1959.000000 59.595056 19.000000 4.000000`
+   - The 'max' row shows the maximum value for each numerical column.
+   - The latest date in the 'Date' column is 2023-04-10 00:00:00.
+   - The maximum login duration is 1959.0, the maximum number of pages visited is 59.595056, and the maximum error count is 4.
+
+10. `std NaN 275.707673 15.755955 5.240971 1.451262`
+    - The 'std' row shows the standard deviation for each numerical column.
+    - The standard deviation is not calculated for the 'Date' column, resulting in 'NaN' (Not a Number).
+    - The standard deviation of the login duration is 275.707673, the standard deviation of the pages visited is 15.755955, and the standard deviation of the error count is 1.451262.
+
+These statistics provide a summary of the distribution and central tendency of the numerical columns in the DataFrame. They help in understanding the range, average, and dispersion of the values in each column.
